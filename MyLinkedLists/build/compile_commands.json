@@ -1,0 +1,7 @@
+[
+{
+  "directory": "E:/Projects/CppRefresh/MyDataStructures/MyLinkedLists/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe    -g   -std=gnu++17 -o CMakeFiles\\MyLinkedList.dir\\main.cpp.obj -c E:\\Projects\\CppRefresh\\MyDataStructures\\MyLinkedLists\\main.cpp",
+  "file": "E:/Projects/CppRefresh/MyDataStructures/MyLinkedLists/main.cpp"
+}
+]
