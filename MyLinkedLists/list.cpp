@@ -2,8 +2,8 @@
 #include "list.h"
 
 
-// Initializes the node and assigns nullptr to next pointer if no args given
-// Then prints out variable values
+/* Initializes the node and assigns nullptr to next pointer if no args given
+    Then prints out variable values */
 template<typename T>
 list<T>::list(T d, list<T>* next_node)
 {
@@ -98,7 +98,48 @@ unsigned int list<T>::FindLengthRec()
     {
         this->next->FindLengthRec();
         count++;
-        // std::cout<<"."<<count<<std::endl;
     }
     return count;
+}
+
+
+// Search an element in a Linked List Iterative
+template<typename T>
+bool list<T>::SearchIter(T key)
+{
+    list<T>* next_one;
+    next_one = this->next;
+    if(this->data==key)
+    {
+        return 1;
+    }
+    while(next_one!=nullptr)
+    {
+        if(next_one->data==key)
+        {
+            return 1;
+        }
+        next_one = next_one->next;
+    }
+    return 0;
+}
+
+
+
+// Search an element in a Linked List Recursive
+template<typename T>
+bool list<T>::SearchRec(T key)
+{
+    if(this->data==key)
+    {
+        return 1;
+    }
+    else if(this->next!=nullptr)
+    {
+        this->next->SearchIter(key);
+    }
+    else
+    {
+        return 0;
+    }
 }

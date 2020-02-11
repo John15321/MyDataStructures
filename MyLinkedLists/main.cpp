@@ -19,6 +19,12 @@ int main()
     std::cout<<"FindLengthRec(): "<<
     node1.FindLengthRec()<<std::endl;
     std::cout<<"------------------"<<std::endl;
-    node1.ShowList();
+    int key;
+    std::cin>>key;  
+    std::cout<<"If "<<key<<" inside: "<<
+    (node1.SearchIter(key)== 1 ? "True":"False")<<std::endl;
+    std::cout<<"------------------"<<std::endl;
+    std::cout<<"If "<<key<<" inside: "<<
+    (node1.SearchRec(key)== 1 ? "True":"False")<<std::endl;
     std::cout<<"------------------"<<std::endl;
 }

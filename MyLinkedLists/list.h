@@ -30,10 +30,10 @@ public:
     unsigned int FindLengthRec();
 
     // Search an element in a Linked List Iterative
-
+    bool SearchIter(T key);
 
     // Search an element in a Linked List Recursive
-
+    bool SearchRec(T key);
 
     // Linked List Deletion (Deleting a given key)
 
