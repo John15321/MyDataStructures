@@ -96,8 +96,9 @@ unsigned int list<T>::FindLengthRec()
     }
     else
     {
+        this->next->FindLengthRec();
         count++;
-        this->FindLengthIter();
+        // std::cout<<"."<<count<<std::endl;
     }
     return count;
 }

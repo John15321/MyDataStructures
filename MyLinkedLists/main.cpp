@@ -16,8 +16,8 @@ int main()
     std::cout<<"FindLengthIter(): "<<
     node1.FindLengthIter()<<std::endl;
     std::cout<<"------------------"<<std::endl;
-    std::cout<<"FindLengthIter(): "<<
-    node1.FindLengthIter()<<std::endl;
+    std::cout<<"FindLengthRec(): "<<
+    node1.FindLengthRec()<<std::endl;
     std::cout<<"------------------"<<std::endl;
     node1.ShowList();
     std::cout<<"------------------"<<std::endl;
