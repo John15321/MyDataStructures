@@ -1,0 +1,17 @@
+# ninja log v5
+1	1136	6030930192338667	CMakeFiles/MyProject.dir/list.cpp.obj	db7c04cfb0a8fd27
+4	1138	6030930192358613	CMakeFiles/MyProject.dir/main.cpp.obj	2e8cc4e192482f5c
+1138	1315	6030930193894796	MyProject.exe	3f80d9b9f52f6756
+1	257	6030930409049189	build.ninja	7f3ade03bdded191
+1	367	6030930413041669	CMakeFiles/MyLinkedList.dir/main.cpp.obj	3337495963bab038
+3	367	6030930413031681	CMakeFiles/MyLinkedList.dir/list.cpp.obj	d44d1e29e583e9e6
+368	522	6030930414413296	MyLinkedList.exe	3a6866aa059bd610
+3	2384	6030957236365030	CMakeFiles/MyLinkedList.dir/main.cpp.obj	3337495963bab038
+92	2404	6030957236548415	CMakeFiles/MyLinkedList.dir/list.cpp.obj	d44d1e29e583e9e6
+5	383	6030965112863711	CMakeFiles/MyLinkedList.dir/list.cpp.obj	d44d1e29e583e9e6
+2	388	6030965112863711	CMakeFiles/MyLinkedList.dir/main.cpp.obj	3337495963bab038
+1	504	6030967857246968	build.ninja	7f3ade03bdded191
+1	750	6031323220109064	CMakeFiles/MyLinkedList.dir/main.cpp.obj	3337495963bab038
+752	1345	6031323225884695	MyLinkedList.exe	7531127600be8edc
+3	377	6031323559926588	CMakeFiles/MyLinkedList.dir/main.cpp.obj	3337495963bab038
+378	532	6031323561288003	MyLinkedList.exe	7531127600be8edc
