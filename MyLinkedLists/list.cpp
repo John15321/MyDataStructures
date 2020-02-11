@@ -84,3 +84,20 @@ unsigned int list<T>::FindLengthIter()
     return count;
 }
 
+
+// Find Length of a Linked List (Recursive)
+template<typename T>
+unsigned int list<T>::FindLengthRec()
+{
+    static unsigned int count;
+    if(this->next == nullptr)
+    {
+        count = 1;
+    }
+    else
+    {
+        count++;
+        this->FindLengthIter();
+    }
+    return count;
+}

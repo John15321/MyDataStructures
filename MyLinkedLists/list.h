@@ -15,19 +15,19 @@ public:
     // Methods
     
     // Print all elements of a list
-    void ShowList();
+    void ShowList(); // works
 
     // Insert a given node into the list (with recursion)
-    void InsertAsNext(list<T>& next_node);
+    void InsertAsNext(list<T>& next_node); // works
 
     // Append to the end of a list
-    void Append(list<T>& to_node);
+    void Append(list<T>& to_node); // works
 
     // Find Length of a Linked List (Iterative)
-    unsigned int FindLengthIter();
+    unsigned int FindLengthIter(); // works
 
     // Find Length of a Linked List (Recursive)
-
+    unsigned int FindLengthRec();
 
     // Search an element in a Linked List Iterative
 

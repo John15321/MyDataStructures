@@ -13,7 +13,11 @@ int main()
     node2.Append(node3);
     std::cout<<"------------------"<<std::endl;
     
-    std::cout<<node1.FindLengthIter()<<std::endl;
+    std::cout<<"FindLengthIter(): "<<
+    node1.FindLengthIter()<<std::endl;
+    std::cout<<"------------------"<<std::endl;
+    std::cout<<"FindLengthIter(): "<<
+    node1.FindLengthIter()<<std::endl;
     std::cout<<"------------------"<<std::endl;
     node1.ShowList();
     std::cout<<"------------------"<<std::endl;
