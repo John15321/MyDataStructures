@@ -14,6 +14,7 @@ list<T>::list(T d, list<T>* next_node)
     std::cout<<"Next: "<<this->next<<std::endl;
 }
 
+
 // Destryos the object and writes out its values
 template<typename T>
 list<T>::~list()
@@ -22,6 +23,7 @@ list<T>::~list()
     std::cout<<"Data: "<<this->data<<std::endl;
     std::cout<<"Next: "<<this->next<<std::endl;
 }
+
 
 // Prints out all next nodes along with their data and their count
 template<typename T>
@@ -62,12 +64,14 @@ void list<T>::InsertAsNext(list<T>& next_node)
     }
 }
 
+
 // Append to the end of a list
 template<typename T>
 void list<T>::Append(list<T>& to_node)
 {
     this->InsertAsNext(to_node);
 }
+
 
 // Find Length of a Linked List (Iterative)
 template<typename T>
@@ -136,7 +140,7 @@ bool list<T>::SearchRec(T key)
     }
     else if(this->next!=nullptr)
     {
-        this->next->SearchIter(key);
+        return this->next->SearchIter(key);
     }
     else
     {
