@@ -36,10 +36,10 @@ void list<T>::ShowList()
     }
     else
     {
-        this->next->Show();
+        this->next->ShowList();
         count++;
+        std::cout << "Node no.: " << count << std::endl;
     }
-    std::cout << "Node no.: " << count << std::endl;
 }
 
 
@@ -49,16 +49,16 @@ void list<T>::InsertAsNext(list<T>& next_node)
 {
     if(this->next == nullptr)
     {
-        this->next = next_node;
+        this->next = &next_node;
     }
     else
     {
         /* If the node that is being added also contains
             nodes (which means that is a list on its own),
             the last one of the alien list will be pointing
-            to the second node of the original list */
-        next_node->next->AddAsLast(this->next);
-        this->next = next_node;
+            to the second in relative order node of the original list */
+        next_node.next->Append(*(this->next));
+        this->next = &next_node;
     }
 }
 
@@ -66,9 +66,21 @@ void list<T>::InsertAsNext(list<T>& next_node)
 template<typename T>
 void list<T>::Append(list<T>& to_node)
 {
-    this->InsertAsNext(&to_node);
+    this->InsertAsNext(to_node);
 }
 
-
-
+// Find Length of a Linked List (Iterative)
+template<typename T>
+unsigned int list<T>::FindLengthIter()
+{
+    unsigned int count=1;
+    list<T>* next_one;
+    next_one = this->next;
+    while(next_one!=nullptr)
+    {
+        count++;
+        next_one = next_one->next;
+    }
+    return count;
+}
 

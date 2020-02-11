@@ -23,10 +23,10 @@ public:
     // Append to the end of a list
     void Append(list<T>& to_node);
 
-    // Find Length of a Linked List Iterative
+    // Find Length of a Linked List (Iterative)
     unsigned int FindLengthIter();
 
-    // Find Length of a Linked List Recursive
+    // Find Length of a Linked List (Recursive)
 
 
     // Search an element in a Linked List Iterative
