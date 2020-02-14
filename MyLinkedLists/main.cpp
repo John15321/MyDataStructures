@@ -2,25 +2,17 @@
 #include "list.h"
 int main()
 {
-    list<int> node1(1);
-    list<int> node2(2);
-    list<int> node3(3);
+    list<int>* p1 = new list<int>(1);
+    list<int>* p2 = new list<int>(2);
+    list<int>* p3 = new list<int>(3);
+
 
     std::cout << "------------------" << std::endl;
-    // Appending
-    node1.Append(node2);
+    p1->Append(*p2);
     std::cout << "------------------" << std::endl;
-    node2.Append(node3);
+    p2->Append(*p3);
+    std::cout << "------------------" << std::endl;
+    p1->ShowList();
     std::cout << "------------------" << std::endl;
 
-    std::cout << "FindLengthIter(): " << node1.FindLengthIter() << std::endl;
-    std::cout << "------------------" << std::endl;
-    std::cout << "FindLengthRec(): " << node1.FindLengthRec() << std::endl;
-    std::cout << "------------------" << std::endl;
-    int key;
-    std::cin >> key;
-    std::cout << "If " << key << " inside: " << (node1.SearchIter(key) == 1 ? "True" : "False") << std::endl;
-    std::cout << "------------------" << std::endl;
-    std::cout << "If " << key << " inside: " << (node1.SearchRec(key) == 1 ? "True" : "False") << std::endl;
-    std::cout << "------------------" << std::endl;
 }

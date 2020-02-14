@@ -32,6 +32,7 @@ void list<T>::ShowList()
     if (this->next == nullptr)
     {
         count = 1;
+        std::cout << "Node no.: " << count << std::endl;
     }
     else
     {
@@ -130,10 +131,61 @@ bool list<T>::SearchRec(T key)
     }
     else if (this->next != nullptr)
     {
-        return this->next->SearchIter(key);
+        return this->next->SearchRec(key);
     }
     else
     {
         return 0;
     }
 }
+/*
+// Linked List Deletion (Deleting a given key)
+template <typename T>
+list<T>* list<T>::DeleteKey(T key)
+{
+    list<T> *next_one;
+    next_one = this->next;
+    if (this->data == key)
+    {
+
+        this->next = nullptr;
+        return &this;
+    }
+    while (next_one != nullptr)
+    {
+        if (next_one->data == key)
+        {
+            // return 1;
+        }
+        next_one = next_one->next;
+    }
+    // return 0;
+}
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

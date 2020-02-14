@@ -37,7 +37,7 @@ public:
     bool SearchRec(T key);
 
     // Linked List Deletion (Deleting a given key)
-
+    // list<T>* list<T>::DeleteKey(T key);
     // Linked List Deletion (Deleting a key at given position)
 
     // Write a function to delete a Linked List
