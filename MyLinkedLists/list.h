@@ -35,46 +35,5 @@ public:
 
     // Search an element in a Linked List Recursive
     bool SearchRec(T key);
-
-    // Linked List Deletion (Deleting a given key)
-    // list<T>* list<T>::DeleteKey(T key);
-    // Linked List Deletion (Deleting a key at given position)
-
-    // Write a function to delete a Linked List
-
-    // Write a function to get Nth node in a Linked List
-
-    // Nth node from the end of a Linked List
-
-    // Print the middle of a given linked list
-
-    // Write a function that counts the number of times a given int occurs in a
-    // Linked List
-
-    // Detect loop in a linked list
-
-    // Find length of loop in linked list
-
-    // Function to check if a singly linked list is palindrome
-
-    // Remove duplicates from a sorted linked list
-
-    // Remove duplicates from an unsorted linked list
-
-    // Swap nodes in a linked list without swapping data
-
-    // Pairwise swap elements of a given linked list
-
-    // Move last element to front of a given Linked List
-
-    // Intersection of two Sorted Linked Lists
-
-    // Intersection point of two Linked Lists.
-
-    // QuickSort on Singly Linked List
-
-    // Segregate even and odd nodes in a Linked List
-
-    // Reverse a linked list
 };
 #include "list.cpp"
